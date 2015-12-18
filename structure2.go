@@ -16,6 +16,24 @@ func main() {
 	fmt.Println(goku.Power)
 	Add(goku)
 	fmt.Println(goku.Power)
+
+	vegeta := &Saiya{"Vegeta", 8000}
+	err := vegeta.Magic(vegeta.Power)
+
+	err = goku.Magic(goku.Power)
+	if err != nil {
+		fmt.Println("Something is wrong")
+	}
+}
+
+func (s *Saiya) Magic (power int) (err error) {
+	if s.Name != "Goku" {
+		fmt.Println("It's not Sun Goku")
+	} else {
+		s.Power *= 2
+	}
+
+	return nil
 }
 
 func Super(s *Saiya) {
