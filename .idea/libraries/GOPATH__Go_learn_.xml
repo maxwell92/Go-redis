@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;Go-learn&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../src/github.com" />
+      <root url="file://$USER_HOME$/src/github.com" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$USER_HOME$/src/github.com/garyburd/redigo/.git" />
+      <root url="file://$PROJECT_DIR$/../src/github.com/rakyll/pb/.git" />
+      <root url="file://$PROJECT_DIR$/../src/github.com/garyburd/redigo/.git" />
+      <root url="file://$PROJECT_DIR$/../Go-redis" />
+      <root url="file://$PROJECT_DIR$/../src/github.com/rakyll/boom/.git" />
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

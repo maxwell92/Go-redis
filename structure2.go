@@ -31,6 +31,7 @@ func (s *Saiya) Magic (power int) (err error) {
 		fmt.Println("It's not Sun Goku")
 	} else {
 		s.Power *= 2
+		fmt.Println(s.Power)
 	}
 
 	return nil

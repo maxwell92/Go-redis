@@ -32,14 +32,19 @@ func OldSaiya(name string, power int) Saiya {
 func main()  {
 	goku := NewSaiya("Goku",9000)
 	fmt.Println(goku.Name)
+	fmt.Println(goku.Power)
 	gohan := OldSaiya("Gohan",5000)
+	fmt.Println(gohan.Name)
 	fmt.Println(gohan.Power)
-
+	// note the difference between = && :=
 	vegeta := new(Saiya)
-	// same as
-	trunks := &Saiya{ }
-
+	vegeta.Name = "Vegeta"
+	vegeta.Power = 8000
 	fmt.Println(vegeta.Name)
+	fmt.Println(vegeta.Power)
+	// new() is same as &XXX{}
+	trunks := &Saiya{ }
+	fmt.Println(trunks.Name)
 	fmt.Println(trunks.Power)
 
 	mushroom := &Saiya {
@@ -52,5 +57,5 @@ func main()  {
 		},
 	}
 	fmt.Println(mushroom.Name)
-
+	fmt.Println(mushroom.Power)
 }
