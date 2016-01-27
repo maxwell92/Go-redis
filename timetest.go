@@ -21,5 +21,14 @@ func main()  {
 	fmt.Println(time.UnixDate)
 	fmt.Println(time.Now().Format(timeLayout))
 
+	fmt.Println("nano")
+	fmt.Println(time.Now().Nanosecond() % 3)
+	time.Sleep(time.Second)
+	fmt.Println(time.Now().Nanosecond() % 3)
+
+	fmt.Println("Unix")
+	fmt.Println(time.Now().Unix() % 3)
+	time.Sleep(time.Second)
+	fmt.Println(time.Now().Unix() % 3)
 }
 
